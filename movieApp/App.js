@@ -2,8 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from './components/Home/Home';
-import Details from './components/Details/Details';
+import Home from './components/HomeScreen/Home';
+import Details from './components/DetailsScreen/Details';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,7 +14,7 @@ export default function App() {
           <Stack.Screen
           name="home"
           component={Home}
-          options={{title: "Movie"}}
+          options={{title: "Pop Movies"}}
           />
           <Stack.Screen
           name="detail"
