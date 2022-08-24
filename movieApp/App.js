@@ -19,7 +19,7 @@ export default function App() {
           <Stack.Screen
           name="detail"
           component={Details}
-          options={{title: "Details"}}
+          options={{title: "Movie details"}}
           />
       </Stack.Navigator>
     </NavigationContainer>

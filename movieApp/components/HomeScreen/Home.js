@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView, TouchableOpacity } from 'react-native';
 import { useState, useEffect } from 'react';
 import { TextInput } from 'react-native-paper';
 import { fetchMovieDetails } from '../../Apis/api';
@@ -8,7 +8,7 @@ import Card from './Card';
 const Home = ({ navigation }) => {
 
     const [movies, setMovies] = useState([]);
-    // console.log(movies);
+    console.log(movies);
     const [searchText, setSearchText] = useState("");
 
     useEffect(() => {
@@ -34,8 +34,13 @@ const Home = ({ navigation }) => {
                     {movies.length > 0 ? (
                         <View>
                             <View style={{ flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap'}}>
-                                {movies.map((movie) =>
-                                    <Card key={movie.id} {...movie} />)}
+                                {movies.map((movie, index) =>
+                                <TouchableOpacity 
+                                key = {index}
+                                onPress={() => navigation.navigate("detail", {movieId: movie.id, otherParams: {...movie}})}>
+                                    <Card key={movie.id} {...movie} />
+                                </TouchableOpacity>
+                                )}
                             </View>
                         </View>
                     ) : (

@@ -11,7 +11,7 @@ export default function Card({ titel, poster_path, vote_average, release_date, o
                 <Image
                     style={{
                         width: (ScreenWidth - 40) / 2,
-                        height: 200,
+                        height: 250,
                         // margin: 10,
                         borderRadius: 5,
                         shadowColor: "#051934",
