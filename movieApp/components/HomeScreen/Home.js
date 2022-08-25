@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { TextInput } from 'react-native-paper';
 import { fetchMovieDetails } from '../../Apis/api';
 import Card from './Card';
+import { getMovies } from '../../Apis/api';
 
 const Home = ({ navigation }) => {
 
@@ -20,6 +21,11 @@ const Home = ({ navigation }) => {
         setMovies(data.results)
     }
 
+    const searchMovies = async () => {
+        const data = await getMovies(searchText);
+        setMovies(data.results)
+    }
+
     return (
         <View>
             <TextInput
@@ -27,6 +33,7 @@ const Home = ({ navigation }) => {
               value={searchText}
               onChangeText={(text) => setSearchText(text)}
               left={<TextInput.Icon name="magnify" />}
+              onSubmitEditing={searchMovies}
             />
             <Text style={styles.headingTitle}>Most Popular</Text>
             <ScrollView>

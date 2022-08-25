@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar, StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import { Appbar} from 'react-native-paper';
 import Card from '../HomeScreen/Card';
+import { Feather } from '@expo/vector-icons';
 
 const Details = ({route, navigation}) => {
     const {movieId, otherParams} = route.params;
@@ -40,10 +41,12 @@ const Details = ({route, navigation}) => {
                 <Text style={{paddingTop: '10%', color: '#5D5450', fontWeight: '700' }}>TRAILERS</Text>
                 <Separator />
                 <TouchableOpacity style={styles.trailerBtnStyle}>
-                        <Text style={{ color: '#5D5450', textAlign: 'center' }}>Play trailer 1</Text>
+                        <Feather name="play-circle" size={24} color="#5D5450" />
+                        <Text style={{ color: '#5D5450'}}>Play trailer 1</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.trailerBtnStyle}>
-                        <Text style={{ color: '#5D5450', textAlign: 'center' }}>Play trailer 2</Text>
+                        <Feather name="play-circle" size={24} color="#5D5450" />
+                        <Text style={{ color: '#5D5450'}}>Play trailer 2</Text>
                 </TouchableOpacity>
 
             </View>
@@ -84,10 +87,12 @@ const styles = StyleSheet.create({
         paddingTop: 10
     },
     trailerBtnStyle: {
+        flexDirection: 'row',
         backgroundColor: '#E1E2F5', 
         height: 55, 
         justifyContent: 'center',
         margin: 5, 
+        alignItems: 'center',
     },
     
     separator: {
