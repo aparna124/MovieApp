@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Details /> details screen renders correctly 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#5D5450",
+        "height": "10%",
+        "justifyContent": "center",
+        "padding": "5%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 24,
+          "fontWeight": "900",
+        }
+      }
+    >
+      title
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "padding": "5%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://image.tmdb.org/t/p/w185/url",
+            }
+          }
+          style={
+            Object {
+              "borderRadius": 5,
+              "height": 250,
+              "marginVertical": 5,
+              "shadowColor": "#051934",
+              "width": 355,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "padding": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 20,
+            }
+          }
+        >
+          2022-09-02
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontSize": 15,
+              "fontStyle": "italic",
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 15,
+                "fontWeight": "500",
+                "paddingBottom": 30,
+              }
+            }
+          >
+            8.1
+            /10
+          </Text>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#5D5450",
+                "height": 50,
+                "justifyContent": "center",
+                "opacity": 1,
+                "padding": "10%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#fff",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Add to Favourite
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "paddingTop": 10,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#5D5450",
+          "fontWeight": "700",
+          "paddingTop": "10%",
+        }
+      }
+    >
+      TRAILERS
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#737373",
+          "borderBottomWidth": 0.5,
+          "paddingVertical": "2%",
+        }
+      }
+    />
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#E1E2F5",
+          "flexDirection": "row",
+          "height": 55,
+          "justifyContent": "center",
+          "margin": 5,
+          "opacity": 1,
+        }
+      }
+    >
+      <Text />
+      <Text
+        style={
+          Object {
+            "color": "#5D5450",
+          }
+        }
+      >
+        Play trailer 1
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#E1E2F5",
+          "flexDirection": "row",
+          "height": 55,
+          "justifyContent": "center",
+          "margin": 5,
+          "opacity": 1,
+        }
+      }
+    >
+      <Text />
+      <Text
+        style={
+          Object {
+            "color": "#5D5450",
+          }
+        }
+      >
+        Play trailer 2
+      </Text>
+    </View>
+  </View>
+</View>
+`;
