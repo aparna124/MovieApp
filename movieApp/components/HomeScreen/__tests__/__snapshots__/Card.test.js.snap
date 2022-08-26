@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> card renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "justifyContent": "center",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://image.tmdb.org/t/p/w185/undefined",
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 5,
+        "height": 250,
+        "marginVertical": 5,
+        "shadowColor": "#051934",
+        "width": 355,
+      }
+    }
+  />
+</View>
+`;
