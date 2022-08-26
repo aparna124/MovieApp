@@ -6,9 +6,6 @@ import { Feather } from '@expo/vector-icons';
 
 const Details = ({route, navigation}) => {
     const {movieId, otherParams} = route.params;
-    console.log("movie id is", movieId);
-    console.log("Other params", otherParams);
-    // currentPosterPath = otherParams.poster_path
 
     const Separator = () => (
         <View style={styles.separator} />
@@ -96,7 +93,6 @@ const styles = StyleSheet.create({
     },
     
     separator: {
-        //  marginVertical: 8,
         paddingVertical: '2%',
         borderBottomColor: '#737373',
         borderBottomWidth: StyleSheet.hairlineWidth,

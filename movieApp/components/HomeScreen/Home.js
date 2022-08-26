@@ -9,7 +9,6 @@ import { getMovies } from '../../Apis/api';
 const Home = ({ navigation }) => {
 
     const [movies, setMovies] = useState([]);
-    console.log(movies);
     const [searchText, setSearchText] = useState("");
 
     useEffect(() => {

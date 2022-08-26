@@ -1,6 +1,6 @@
 
-const POPULAR_MOVIE_API = 'https://api.themoviedb.org/3/movie/popular?api_key=<API_KEY>';
-const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=<API_KEY>";
+const POPULAR_MOVIE_API = 'https://api.themoviedb.org/3/movie/popular?api_key=c6147850d9b8058b02bf62b0a4304c87';
+const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=c6147850d9b8058b02bf62b0a4304c87";
 
 export const fetchMovieDetails = async () => {
     try {
