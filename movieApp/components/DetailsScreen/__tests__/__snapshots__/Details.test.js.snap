@@ -6,9 +6,9 @@ exports[`<Details /> details screen renders correctly 1`] = `
     style={
       Object {
         "backgroundColor": "#5D5450",
-        "height": "10%",
+        "height": 60,
         "justifyContent": "center",
-        "padding": "5%",
+        "paddingLeft": 20,
       }
     }
   >
@@ -17,7 +17,7 @@ exports[`<Details /> details screen renders correctly 1`] = `
         Object {
           "color": "white",
           "fontSize": 24,
-          "fontWeight": "900",
+          "fontWeight": "700",
         }
       }
     >
@@ -27,7 +27,7 @@ exports[`<Details /> details screen renders correctly 1`] = `
   <View
     style={
       Object {
-        "padding": "5%",
+        "padding": 20,
       }
     }
   >
@@ -72,11 +72,11 @@ exports[`<Details /> details screen renders correctly 1`] = `
         <Text
           style={
             Object {
-              "fontSize": 20,
+              "fontSize": 25,
             }
           }
         >
-          2022-09-02
+          2022
         </Text>
         <Text
           style={
