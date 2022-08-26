@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, SafeAreaView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './components/HomeScreen/Home';
@@ -9,23 +9,24 @@ import { Ionicons } from '@expo/vector-icons';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+
   return (
     <NavigationContainer>
-      <StatusBar 
-      backgroundColor="#fff"
+      <StatusBar
+        style="light"
       />
       <Stack.Navigator
         initialRouteName="Home"
         screenOptions={{
           headerRight: () => (
-            <Ionicons 
-              name="menu-outline" 
-              size={24} 
-              color="white" 
+            <Ionicons
+              name="menu-outline"
+              size={24}
+              color="white"
             />
           ),
           headerStyle: {
-            backgroundColor: '#3D3D3D'
+            backgroundColor: '#000'
           },
           headerTintColor: "white"
         }}
@@ -44,7 +45,7 @@ export default function App() {
           options={{
             title: "Movie details",
             headerBackTitleVisible: false
-        }}
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>

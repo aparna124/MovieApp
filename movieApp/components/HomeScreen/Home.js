@@ -21,31 +21,31 @@ const Home = ({ navigation }) => {
     }
 
     const searchMovies = async () => {
-        const data = await getMovies(searchText);
-        setMovies(data.results)
+        // const data = await getMovies(searchText);
+        // setMovies(data.results)
     }
 
     return (
         <View>
             <TextInput
-              placeholder="Search your movies here"
-              value={searchText}
-              onChangeText={(text) => setSearchText(text)}
-              left={<TextInput.Icon name="magnify" />}
-              onSubmitEditing={searchMovies}
+                placeholder="Search your movies here"
+                value={searchText}
+                onChangeText={(text) => setSearchText(text)}
+                left={<TextInput.Icon name="magnify" />}
+                onSubmitEditing={searchMovies}
             />
             <Text style={styles.headingTitle}>Most Popular</Text>
             <ScrollView>
                 <View style={{ padding: 10 }}>
                     {movies.length > 0 ? (
                         <View>
-                            <View style={{ flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap'}}>
+                            <View style={{ flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap' }}>
                                 {movies.map((movie, index) =>
-                                <TouchableOpacity 
-                                key = {index}
-                                onPress={() => navigation.navigate("detail", {movieId: movie.id, otherParams: {...movie}})}>
-                                    <Card key={movie.id} {...movie} />
-                                </TouchableOpacity>
+                                    <TouchableOpacity
+                                        key={index}
+                                        onPress={() => navigation.navigate("detail", { movieId: movie.id, otherParams: { ...movie } })}>
+                                        <Card key={movie.id} {...movie} />
+                                    </TouchableOpacity>
                                 )}
                             </View>
                         </View>
@@ -55,18 +55,18 @@ const Home = ({ navigation }) => {
                 </View>
             </ScrollView>
 
-            
+
 
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-      headingTitle: {
+    headingTitle: {
         fontSize: 28,
         fontWeight: 'bold',
         padding: 10,
-      },
-    });
+    },
+});
 
 export default Home;
